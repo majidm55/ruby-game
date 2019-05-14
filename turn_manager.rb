@@ -20,6 +20,10 @@ class TurnManager
     return guess
   end
 
+  def display_question(addend1, addend2)
+    puts "What is #{addend1} plus #{addend2}?"
+  end
+
   def generate_question
     add1 = Random.new.rand(10)
     add2 = Random.new.rand(10)
@@ -31,7 +35,7 @@ class TurnManager
       @current_player.lose_life
       puts "Wrong Answer! #{@current_player.name} Loses a Life. You have #{@current_player.lives} Lives Remaining!"
     else 
-      puts "Correct Answer! #{current_player.name} has #{current_player.lives} Lives Remaining!"
+      puts "Correct Answer! #{@current_player.name} has #{@current_player.lives} Lives Remaining!"
     end
   end
 end
