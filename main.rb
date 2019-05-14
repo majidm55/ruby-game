@@ -4,6 +4,6 @@ game = Game.new
 
 puts "Welcome to two person addition game!"
 
-game.plays
+game.play
 
 puts "Thanks for playing, please come again!"
